@@ -1,13 +1,13 @@
 {
   "name": "vite-library-tpl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "./dist/index.esm.js",
+  "main": "./dist/index.es.js",
   "types": "./dist/types/index.d.ts",
   "exports": {
-    "import": "./dist/index.esm.js",
+    "import": "./dist/index.es.js",
     "require": "./dist/index.cjs.js",
-    "default": "./dist/index.esm.js"
+    "default": "./dist/index.es.js"
   },
   "directories": {
     "lib": "lib"
