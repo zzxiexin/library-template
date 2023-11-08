@@ -1,6 +1,6 @@
 {
   "name": "webpack-library-tpl",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/esm.js",
   "types": "dist/types/index.d.ts",
