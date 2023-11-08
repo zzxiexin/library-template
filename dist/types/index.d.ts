@@ -1,2 +1,2 @@
-import debounce from './debounce';
-export { debounce };
+import Button from './Button';
+export { Button };

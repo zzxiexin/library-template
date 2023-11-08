@@ -1,3 +1,3 @@
-import debounce from './debounce'
+import Button from './Button'
 
-export { debounce }
+export { Button }

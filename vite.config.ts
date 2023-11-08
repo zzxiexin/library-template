@@ -12,5 +12,15 @@ export default defineConfig({
       formats: ['es', 'cjs', 'umd', 'iife'],
     },
     sourcemap: false,
+    rollupOptions: {
+      // 确保外部化处理那些你不想打包进库的依赖
+      external: ['react'],
+      output: {
+        globals: {
+          react: 'react',
+          'react-dom': 'react-dom',
+        },
+      },
+    },
   },
 })
