@@ -1,5 +1,5 @@
 {
-  "name": "rollup-library-tpl",
+  "name": "vite-library-tpl",
   "version": "1.0.1",
   "description": "",
   "main": "./dist/index.esm.js",
@@ -19,8 +19,6 @@
   "devDependencies": {
     "@babel/core": "^7.23.2",
     "@babel/preset-env": "^7.23.2",
-    "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-node-resolve": "^15.2.3",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "eslint": "^8.53.0",
@@ -29,14 +27,12 @@
     "eslint-scope": "^5.1.1",
     "husky": "^8.0.3",
     "prettier": "^3.0.3",
-    "rollup": "^4.3.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-typescript2": "^0.36.0",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
   },
   "scripts": {
-    "build": "rm -rf dist && rollup --config",
+    "build": "rm -rf dist && vite build && tsc",
     "format": "prettier --write lib",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix"
   },
