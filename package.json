@@ -1,6 +1,6 @@
 {
   "name": "webpack-library-tpl",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/esm.js",
   "types": "dist/types/index.d.ts",
@@ -27,7 +27,7 @@
     "webpack-cli": "^5.1.4"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "rm -rf dist && webpack",
     "format": "prettier --write lib",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix"
   },
